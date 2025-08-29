@@ -1,0 +1,25 @@
+[package]
+name = "boost_functional"
+description = "Boost C++ library boost_functional packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_functional"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_functional"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_function = { version = "0.1.0", path = "../boost_function" }
+boost_function_types = { version = "0.1.0", path = "../boost_function_types" }
+boost_mpl = { version = "0.1.0", path = "../boost_mpl" }
+boost_preprocessor = { version = "0.1.0", path = "../boost_preprocessor" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+boost_typeof = { version = "0.1.0", path = "../boost_typeof" }
+boost_utility = { version = "0.1.0", path = "../boost_utility" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
